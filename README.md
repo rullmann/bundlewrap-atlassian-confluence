@@ -6,7 +6,7 @@ As the software is proprietary and repositories are not available the setup is a
 ## Requirements
 
 * [Oracle JDK](https://gist.github.com/rullmann/e909ec68b66ac711bf441188dbea93c0) installed under `/opt/java/current`
-* [Atlassian Confluence] installed under `/opt/confluence` with a systemd unit called `atlassian-confluence.service`
+* Atlassian Confluence installed under `/opt/confluence` with a systemd unit called `atlassian-confluence.service`
   * This can be achived by building rpm files: https://github.com/rullmann/atlassian-rpm-specs
 
 ## Setup notes
