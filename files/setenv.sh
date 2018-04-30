@@ -77,5 +77,6 @@ CATALINA_OPTS="${node.metadata.get('atlassian-confluence', {}).get('jvm_args')} 
 % if node.metadata.get('atlassian-confluence', {}).get('enable_jmx', False):
 CATALINA_OPTS="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=5001 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false <%text>${CATALINA_OPTS}</%text>"
 % endif
+CATALINA_OPTS="-XX:ReservedCodeCacheSize=256m -XX:+UseCodeCacheFlushing ${CATALINA_OPTS}"
 
 export CATALINA_OPTS
